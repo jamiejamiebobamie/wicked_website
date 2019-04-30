@@ -1,0 +1,59 @@
+#test{
+    z-index:0;
+    position:fixed;
+    bottom:0px;
+    left:10%;
+    /* margin: 2% auto; */
+}
+
+/* #test_scale{
+    z-index:1;
+    position:fixed;
+    bottom:0px;
+    left:10%;
+    /* width: 1300px;
+    height: 731px; */
+
+    /* width: 930px;
+    height: 447px; */
+
+    /* width: 29760px;
+    height: 447px; */
+
+    /* margin: 2% auto;
+
+    background: url('/media/imgs/idle_handUp_wrong_order.png') left center;
+    animation: play 3s steps(30) infinite;
+} */
+
+/* @keyframes play {
+   100% { background-position: -29760px; }
+} */
+
+div{
+    position:fixed;
+    bottom:0px;
+    left:10%;
+    /* width: 1300px;
+    height: 731px; */
+
+    width: 930px;
+    height: 447px;
+
+    /* width: 29760px;
+    height: 447px; */
+
+    /* margin: 2% auto; */
+
+  /* background: url('/media/imgs/idle_handUp_wrong_order.png') left center; */
+  background: url('/media/imgs/idle_handDown_wrong_order.png') left center;
+  animation: moveX 3s steps(32) infinite;
+}
+@keyframes moveX{
+  from{background-position-x:0px;}
+  to{background-position-x:-29760px;}
+}
+
+body{
+    background-color: black;
+}
