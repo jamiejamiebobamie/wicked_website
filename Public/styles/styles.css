@@ -45,11 +45,11 @@ div{
 
     /* margin: 2% auto; */
 
-  /* background: url('/media/imgs/idle_handUp_wrong_order.png') left center;
-  animation: moveX 3s steps(31) infinite; */
+  background: url('/media/imgs/idle_handUp_wrong_order.png') left center;
+  animation: moveX 7s steps(32) infinite;
 
-  background: url('/media/imgs/idle_handDown_wrong_order.png') left center;
-  animation: moveX 3s steps(32) infinite;
+  /* background: url('/media/imgs/idle_handDown_wrong_order.png') left center;
+  animation: moveX 3s steps(32) infinite; */
 }
 @keyframes moveX{
   from{background-position-x:0px;}
