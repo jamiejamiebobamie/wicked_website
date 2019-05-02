@@ -30,7 +30,7 @@
    100% { background-position: -29760px; }
 } */
 
-div{
+.test_scale{
     position:fixed;
     bottom:0px;
     left:10%;
@@ -45,16 +45,78 @@ div{
 
     /* margin: 2% auto; */
 
-  background: url('/media/imgs/idle_handUp_wrong_order.png') left center;
-  animation: moveX 7s steps(32) infinite;
-
-  /* background: url('/media/imgs/idle_handDown_wrong_order.png') left center;
-  animation: moveX 3s steps(32) infinite; */
+  background: url('/media/imgs/idle_handDown_wrong_order.png') left center;
+  animation: idle 3s steps(32) infinite;
 }
-@keyframes moveX{
+@keyframes idle{
   from{background-position-x:0px;}
   to{background-position-x:-29760px;}
 }
+
+.test_scale:hover{
+
+    background: url('/media/imgs/idle_handUp_wrong_order.png') left center;
+    animation: wand 7s steps(32) infinite;
+}
+
+@keyframes wand{
+  from{background-position-x:0px;}
+  to{background-position-x:-29760px;}
+}
+
+
+.book{
+    position:fixed;
+    bottom:300px;
+    left:10%;
+    /* width: 1300px;
+    height: 731px; */
+
+    width: 300px;
+    height: 230px;
+
+    /* width: 29760px;
+    height: 447px; */
+
+    /* margin: 2% auto; */
+
+  background: url('/media/imgs/book_rollover_wrong_order.png') left center;
+
+}
+
+.book:hover{
+    animation: openBook 3s steps(85) infinite;
+
+}
+@keyframes openBook{
+  from{background-position-x:0px;}
+  to{background-position-x:-25500px;}
+}
+
+.monster{
+    position:fixed;
+    bottom:500px;
+    left:10%;
+    /* width: 1300px;
+    height: 731px; */
+
+    width: 40px;
+    height: 20px;
+
+    /* width: 29760px;
+    height: 447px; */
+
+    /* margin: 2% auto; */
+
+  background: url('/media/imgs/monster_open_eyes_sprite.png') left center;
+  animation: openEyes 3s steps(48) infinite;
+
+}
+@keyframes openEyes{
+  from{background-position-x:0px;}
+  to{background-position-x:-1920px;}
+}
+
 
 body{
     background-color: black;
