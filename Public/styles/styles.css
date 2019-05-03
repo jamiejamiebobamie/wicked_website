@@ -1,3 +1,12 @@
+#logo{
+    z-index:0;
+    position:fixed;
+    bottom:450px;
+    left:-1110px;
+    transform: scale(.19);
+    /* opacity: .3; */
+}
+
 #character_background{
     /* Adds a static background of the character for when the animation 'pops' */
     z-index:0;
@@ -14,7 +23,7 @@
     width: 930px;
     height: 447px;
     background: url('/media/imgs/character_handDown.png') left center;
-    animation: idle 7s steps(32) infinite alternate-reverse;
+    animation: idle 4s steps(32) infinite alternate-reverse;
 }
 
 @keyframes idle{
