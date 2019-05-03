@@ -22,7 +22,7 @@
   to{background-position-x:-29760px;}
 }
 
-.character:hover{
+.character:hover, .character:active{
 
     background: url('/media/imgs/character_handUp.png') left center;
     animation: wand 6s steps(32) infinite alternate-reverse;
@@ -53,7 +53,7 @@
 
 }
 
-.book:hover{
+.book:hover, .book:active{
     animation: openBook 3s steps(101) infinite alternate;
 
 }
