@@ -34,7 +34,7 @@
 .character:hover, .character:active, .character:focus{
 
     background: url('/media/imgs/character_handUp.png') left center;
-    animation: wand 6s steps(32) infinite alternate-reverse;
+    animation: wand 5s steps(32) infinite alternate-reverse;
 
 }
 
@@ -79,7 +79,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 8.5s steps(416) infinite alternate-reverse;
+    animation: openEyes 4s steps(416) infinite alternate-reverse;
 }
 
 #monster_background0{
@@ -99,7 +99,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 7s steps(416) infinite alternate-reverse;
+    animation: openEyes 6s steps(416) infinite alternate-reverse;
 }
 
 #monster_background1{
@@ -119,7 +119,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 4s steps(416) infinite alternate-reverse;
+    animation: openEyes 8.5s steps(416) infinite alternate-reverse;
 }
 
 #monster_background2{
@@ -139,7 +139,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 5.5s steps(416) infinite alternate-reverse;
+    animation: openEyes 10s steps(416) infinite alternate-reverse;
 }
 
 #monster_background3{
