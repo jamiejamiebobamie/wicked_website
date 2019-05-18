@@ -1,25 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height: 100%;
+    /* width: 100%; */
+}
+
+
 #logo{
     z-index:0;
-    position:fixed;
+    /* position:fixed;
     top:-400px;
-    left:-1110px;
+    left:-1110px; */
     transform: scale(.19);
     /* opacity: .3; */
+}
+
+.character{
+    /* position:absolute; */
+    /* left: 50%; */
+    bottom:0px;
+    /* width: 5vw; */
+    background-color: white;
 }
 
 #character_background{
     /* Adds a static background of the character for when the animation 'pops' */
     z-index:0;
-    position:fixed;
+    /* position:fixed;
     bottom:0px;
-    left:10%;
+    left:10%; */
 }
 
-.character{
-    position:fixed;
-    bottom:0px;
-    left:10%;
-
+.character_sprite{
+    /* position:fixed; */
+    /* bottom:0px;
+    left:10%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .5;
     width: 930px;
     height: 447px;
     background: url('/media/imgs/character_handDown.png') left center;
@@ -31,7 +51,7 @@
   to{background-position-x:-29760px;}
 }
 
-.character:hover, .character:active, .character:focus{
+.character_sprite:hover, .character_sprite:active, .character_sprite:focus{
 
     background: url('/media/imgs/character_handUp.png') left center;
     animation: wand 5s steps(32) infinite alternate-reverse;
@@ -46,15 +66,20 @@
 #book_background{
     /* Adds a static background for when the animation 'pops' */
     z-index:0;
-    position:fixed;
+    /* position:fixed;
     bottom:700px;
-    left:33%;
+    left:33%; */
 }
 
-.book{
-    position:fixed;
+.book_button{
+    z-index: 1;
+    opacity: .5;
+}
+
+.book_sprite{
+    /* position:fixed;
     bottom:700px;
-    left:33%;
+    left:33%; */
 
     width: 300px;
     height: 230px;
@@ -62,7 +87,7 @@
 
 }
 
-.book:hover, .book:active, .book:focus{
+.book_sprite:hover, .book_sprite:active, .book_sprite:focus{
     animation: openBook 3s steps(101) infinite alternate;
 
 }
@@ -71,10 +96,34 @@
   to{background-position-x:-30300px;}
 }
 
-.monster0{
-    position:fixed;
-    bottom:475px;
-    left:40%;
+.monster{
+    /* position: relative;
+    position: absolute; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top:auto;
+    left: 50%;
+    transform: translateY(5px) 4s infinite alternate-reverse;
+}
+
+.monster_sprites{
+    z-index: 1;
+}
+
+.monster_sprites, .monster_background_images{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top:auto;
+    left: 50%;
+}
+
+.monster0_sprite, .monster1_sprite, .monster2_sprite, .monster3_sprite{
+    /* position:fixed;
+    bottom:475px;*/
+    /* left:30vw; */
 
     width: 40px;
     height: 20px;
@@ -82,19 +131,21 @@
     animation: openEyes 4s steps(416) infinite alternate-reverse;
 }
 
+
+
 #monster_background0{
     /* adds a static background of open eyes for when the animation 'pops' out */
-    position:fixed;
-    bottom:475px;
-    left:40%;
+    /* position:fixed;
+    bottom:475px;*/
+    /* left:40%; */
     width: 40px;
     height: 20px;
 }
 
-.monster1{
-    position:fixed;
-    bottom:450px;
-    left:25%;
+.monster1_sprite{
+    /* position:fixed;
+    bottom:450px;*/
+    /* left:25%; */
 
     width: 40px;
     height: 20px;
@@ -104,17 +155,17 @@
 
 #monster_background1{
     /* adds a static background of open eyes for when the animation 'pops' out */
-    position:fixed;
-    bottom:450px;
-    left:25%;
+    /* position:fixed;
+    bottom:450px;*/
+    /* left:25%; */
     width: 40px;
     height: 20px;
 }
 
-.monster2{
-    position:fixed;
-    bottom:450px;
-    left:35%;
+.monster2_sprite{
+    /* position:fixed;
+    bottom:450px;*/
+    /* left:35%; */
 
     width: 40px;
     height: 20px;
@@ -124,17 +175,17 @@
 
 #monster_background2{
     /* adds a static background of open eyes for when the animation 'pops' out */
-    position:fixed;
+    /* position:fixed;
     bottom:450px;
-    left:35%;
+    left:35%; */
     width: 40px;
     height: 20px;
 }
 
-.monster3{
-    position:fixed;
-    bottom:500px;
-    left:30%;
+.monster3_sprite{
+    /* position:fixed;
+    bottom:500px;*/
+    /* left:30%; */
 
     width: 40px;
     height: 20px;
@@ -144,9 +195,9 @@
 
 #monster_background3{
     /* adds a static background of open eyes for when the animation 'pops' out */
-    position:fixed;
+    /* position:fixed;
     bottom:500px;
-    left:30%;
+    left:30%; */
     width: 40px;
     height: 20px;
 }
@@ -154,6 +205,11 @@
 @keyframes openEyes{
   from{background-position-x:0px;}
   to{background-position-x:-16640px;}
+}
+
+@keyframes breathing{
+    from {0%;}
+    to{100%;}
 }
 
 body{
