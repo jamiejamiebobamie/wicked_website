@@ -6,7 +6,7 @@ html, body {
 .container{
     /* display: flex;
     flex-direction: column; */
-    background-color: yellow;
+    /* background-color: yellow; */
     /* height: 100%; */
     /* width: 100%; */
     /* flex-grow: 1; */
@@ -35,7 +35,7 @@ flex-direction: column;
 /* margin-top:auto; */
     /* width: 5vw; */
     /* margin-top: 10vw; */
-    background-color: white;
+    /* background-color: white; */
     /* margin-top: auto; */
 
 }
