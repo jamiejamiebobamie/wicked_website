@@ -1,11 +1,24 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    background-color: yellow;
-    height: 100%;
-    /* width: 100%; */
+html, body {
+  height: 100%;
+  background-color: black;
 }
 
+.container{
+    /* display: flex;
+    flex-direction: column; */
+    background-color: yellow;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* flex-grow: 1; */
+
+    height: 100%;
+min-height: 100%;
+display: flex;
+flex-direction: column;
+   /* margin-bottom: auto; */
+       /* align-items: flex-end; */
+       /* align-items: baseline; */
+}
 
 #logo{
     z-index:0;
@@ -19,9 +32,12 @@
 .character{
     /* position:absolute; */
     /* left: 50%; */
-    bottom:0px;
+/* margin-top:auto; */
     /* width: 5vw; */
+    /* margin-top: 10vw; */
     background-color: white;
+    /* margin-top: auto; */
+
 }
 
 #character_background{
@@ -39,7 +55,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    opacity: .5;
+    /* opacity: .5; */
     width: 930px;
     height: 447px;
     background: url('/media/imgs/character_handDown.png') left center;
@@ -102,8 +118,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    /* margin-bottom: auto; */
     top:auto;
     left: 50%;
+    margin: 1vw;
     transform: translateY(5px) 4s infinite alternate-reverse;
 }
 
@@ -128,7 +147,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 4s steps(416) infinite alternate-reverse;
+    animation: openEyes 4s steps(415) infinite alternate-reverse;
 }
 
 
@@ -150,7 +169,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 6s steps(416) infinite alternate-reverse;
+    animation: openEyes 6s steps(415) infinite alternate-reverse;
 }
 
 #monster_background1{
@@ -170,7 +189,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 8.5s steps(416) infinite alternate-reverse;
+    animation: openEyes 8.5s steps(415) infinite alternate-reverse;
 }
 
 #monster_background2{
@@ -190,7 +209,7 @@
     width: 40px;
     height: 20px;
     background: url('/media/imgs/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 10s steps(416) infinite alternate-reverse;
+    animation: openEyes 10s steps(415) infinite alternate-reverse;
 }
 
 #monster_background3{
@@ -202,16 +221,11 @@
     height: 20px;
 }
 
+.test{
+flex-grow: 1;
+}
+
 @keyframes openEyes{
   from{background-position-x:0px;}
-  to{background-position-x:-16640px;}
-}
-
-@keyframes breathing{
-    from {0%;}
-    to{100%;}
-}
-
-body{
-    background-color: black;
+  to{background-position-x:-16600px;}
 }
