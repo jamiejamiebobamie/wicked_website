@@ -50,4 +50,9 @@ app.listen(port);
         res.render('index');
         })
 
+// INDEX
+    app.get('/grimoire', (req, res) => {
+        res.render('grimoire');
+        })
+
 module.exports = app;
