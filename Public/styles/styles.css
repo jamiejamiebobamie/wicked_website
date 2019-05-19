@@ -117,7 +117,7 @@ flex-direction: column;
     position: absolute; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 
     /* margin-bottom: auto; */
     top:auto;
