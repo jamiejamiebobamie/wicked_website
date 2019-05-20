@@ -45,7 +45,15 @@ flex-direction: column;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2vw;
 
+}
+
+h1{
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 5vw;
+    padding-bottom: 2vw;
 }
 
 p{
@@ -53,28 +61,40 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    color: black;
-    font-size: 3vw;
+    /* background-color: white; */
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 2.5vw;
+    /* flex-grow: 1; */
+    /* padding-bottom: 3vw; */
+}
+
+h3{
+    float: right;
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 2vw;
+    margin: 1vw;
+
 }
 
 .slideshow-container{
         /* background-color: white; */
-        background-color: #D6CCA9;
+        /* background-color: #D6CCA9; */
 
 }
 
 .mySlides{
-    background-color: white;
+    /* background-color: white; */
 
 
 }
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 9s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 9s;
+  animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
