@@ -1,6 +1,6 @@
 const slides = document.getElementsByClassName("mySlides");
-const back = document.getElementById("book_button back");
-const forward = document.getElementById("book_button forward");
+const back = document.getElementById("book_button_back");
+const forward = document.getElementById("book_button_forward");
 const book = document.getElementById("book_sprite");
 
 
