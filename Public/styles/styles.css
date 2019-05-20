@@ -62,33 +62,37 @@ button{
 } */
 
 #book_button_back{
-    background: url('/media/imgs/backButton.png') left center;
-    background-size: 13vw 13vw;
+    background: url('/media/imgs/icon_arrow4.png') left center;
+    background-size: 13vw 5vw;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
 }
 
 #book_button_back:hover{
     /* width: 5vw; */
     /* height: 50px; */
     /* background-color: pink; */
-    background: url('/media/imgs/backButtonHover.png') left center;
-    background-size: 13vw 13vw;
+    background: url('/media/imgs/icon_arrow4Hover.png') left center;
+    background-size: 13vw 5vw;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
 }
 
 #book_button_forward{
-    background: url('/media/imgs/backButton.png') left center;
-    background-size: 13vw 13vw;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    background: url('/media/imgs/icon_arrow4.png') left center;
+    background-size: 13vw 5vw;
+    background-repeat: no-repeat;
 }
 
 #book_button_forward:hover{
     /* width: 5vw; */
     /* height: 50px; */
     /* background-color: pink; */
-    background: url('/media/imgs/backButtonHover.png') left center;
-    background-size: 13vw 13vw;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    background: url('/media/imgs/icon_arrow4Hover.png') left center;
+    background-size: 13vw 5vw;
+    background-repeat: no-repeat;
 }
 
 h1{
