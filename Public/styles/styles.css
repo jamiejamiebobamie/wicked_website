@@ -130,13 +130,13 @@ h3{
 }
 
 .slideshow-container{
-        background-color: brown;
+        /* background-color: brown; */
         /* background-color: #D6CCA9; */
 
 }
 
 .mySlides{
-    background-color: pink;
+    /* background-color: pink; */
     /* display: flex;
     flex-direction: column;
     height: 55vw; */
