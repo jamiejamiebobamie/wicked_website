@@ -33,16 +33,26 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
+  // Code for Chrome, Safari and Opera
+  book.addEventListener("webkitAnimationEnd", removeAnimAddAnim);
+  // Standard syntax
+  book.addEventListener("animationend", removeAnimAddAnim);
 }
 
-// Turn page backward.
-back.addEventListener('click', function(e){
-    // book.addClass('.back');
-    console.log("hey");
-    plusSlides(-1);
-})
+function removeAnimAddAnim(){
+    book.classList.remove("animation_backward");
+    book.classList.remove("animation_forward");
+    book.classList.add("animation_open");
+}
 
 // Turn page forward.
 forward.addEventListener('click', function(e){
+    book.classList.add("animation_forward");
     plusSlides(1);
+})
+
+// Turn page backward.
+back.addEventListener('click', function(e){
+    book.classList.add("animation_backward");
+    plusSlides(-1);
 })

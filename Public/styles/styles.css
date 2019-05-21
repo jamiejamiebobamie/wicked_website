@@ -12,12 +12,12 @@ html, body {
     /* flex-grow: 1; */
 
     height: 100%;
-min-height: 100%;
-display: flex;
-flex-direction: column;
-   /* margin-bottom: auto; */
-       /* align-items: flex-end; */
-       /* align-items: baseline; */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: auto; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
 }
 
 #logo{
@@ -34,7 +34,7 @@ flex-direction: column;
 .character{
     /* position:absolute; */
     /* left: 50%; */
-/* margin-top:auto; */
+    /* margin-top:auto; */
     /* width: 5vw; */
     /* margin-top: 10vw; */
     /* background-color: white; */
@@ -129,15 +129,16 @@ h3{
 }
 
 .slideshow-container{
-        /* background-color: white; */
+        /* background-color: brown; */
         /* background-color: #D6CCA9; */
 
 }
 
 .mySlides{
-    /* background-color: white; */
+    /* background-color: pink; */
     /* display: flex;
-    flex-direction: column; */
+    flex-direction: column;
+    height: 55vw; */
 
 }
 
@@ -242,9 +243,17 @@ h3{
     /* animation: openBook 3s steps(1) infinite; */
 }
 
-.back{
-    animation: turnPageBackward 3s steps(86) forwards;
+.animation_open{
+    animation: openBook 3s steps(1) infinite;
 }
+
+.animation_forward{
+    animation: turnPageForward 3s steps(86) forwards;
+}
+
+.animation_backward{
+    animation: turnPageBackward 3s steps(86) forwards;
+} */
 
 @keyframes openBook{
     /* 1 step */
@@ -397,6 +406,40 @@ flex-grow: 1;
     flex-grow: 1;
 }
 
+@media only screen and (max-width: 1300px) {
+
+    h1{
+        font-size: 10vw;
+        padding-bottom: 4vw;
+    }
+
+    p{
+        font-size: 4vw;
+    }
+
+    h3{
+        font-size: 3.5vw;
+        margin: 1vw;
+    }
+    button{
+        width:20vw;
+        height: 20vw;
+    }
+    #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
+        background-size: 16.5vw 7vw;
+    }
+    /* #book_button_forward:hover{
+                background-size: 16.5vw 7vw;
+
+    }
+    #book_button_back{
+
+    }
+    #book_button_back:hover{
+
+    } */
+}
+
 
 @media only screen and (max-width: 1300px) {
 
@@ -410,7 +453,7 @@ flex-grow: 1;
     }
 
     h3{
-        font-size: 3vw;
+        font-size: 3.5vw;
         margin: 1vw;
     }
     button{
