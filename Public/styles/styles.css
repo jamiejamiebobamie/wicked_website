@@ -402,15 +402,15 @@ flex-grow: 1;
 
     h1{
         font-size: 10vw;
-        padding-bottom: 3vw;
+        padding-bottom: 4vw;
     }
 
     p{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     h3{
-        font-size: 4vw;
+        font-size: 1vw;
         margin: 1vw;
 
     }
