@@ -398,7 +398,7 @@ flex-grow: 1;
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
 
     h1{
         font-size: 10vw;
@@ -406,12 +406,28 @@ flex-grow: 1;
     }
 
     p{
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     h3{
-        font-size: 1vw;
+        font-size: 3vw;
         margin: 1vw;
+    }
+    button{
+        width:20vw;
+        height: 20vw;
+    }
+    #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
+        background-size: 16.5vw 7vw;
+    }
+    /* #book_button_forward:hover{
+                background-size: 16.5vw 7vw;
 
     }
+    #book_button_back{
+
+    }
+    #book_button_back:hover{
+
+    } */
 }
