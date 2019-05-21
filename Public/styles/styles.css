@@ -47,7 +47,6 @@ flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vw;
-
 }
 
 button{
@@ -386,4 +385,29 @@ flex-grow: 1;
     /* 415 steps */
   from{background-position-x:-16600px;}
   to{background-position-x:0px;}
+}
+
+
+@media only screen and (max-width: 600px) {
+    p{
+        z-index: 15;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: white; */
+        color: white;
+        font-family: 'Optima', sans-serif;
+        font-size: 5vw;
+        /* flex-grow: 1; */
+        /* padding-bottom: 3vw; */
+    }
+
+    h3{
+        float: right;
+        color: white;
+        font-family: 'Optima', sans-serif;
+        font-size: 3vw;
+        margin: 1vw;
+
+    }
 }
