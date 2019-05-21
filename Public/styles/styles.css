@@ -97,8 +97,11 @@ button{
 h1{
     color: white;
     font-family: 'Optima', sans-serif;
-    font-size: 10vw;
-    padding-bottom: 3vw;
+    /* font-size: 10vw; */
+    font-size: 5vw;
+    /* font-size: 5vw; */
+    padding-top: 2vw;
+    padding-bottom: 1vw;
 }
 
 p{
@@ -109,7 +112,9 @@ p{
     /* background-color: white; */
     color: white;
     font-family: 'Optima', sans-serif;
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    font-size: 2.5vw;
+
     /* flex-grow: 1; */
     /* padding-bottom: 3vw; */
 }
@@ -118,7 +123,7 @@ h3{
     float: right;
     color: white;
     font-family: 'Optima', sans-serif;
-    font-size: 2vw;
+    font-size: 1vw;
     margin: 1vw;
 
 }
@@ -131,7 +136,8 @@ h3{
 
 .mySlides{
     /* background-color: white; */
-
+    /* display: flex;
+    flex-direction: column; */
 
 }
 
@@ -387,25 +393,23 @@ flex-grow: 1;
   to{background-position-x:0px;}
 }
 
+.last{
+    flex-grow: 1;
+}
+
 
 @media only screen and (max-width: 600px) {
+
+    h1{
+        font-size: 10vw;
+        padding-bottom: 3vw;
+    }
+
     p{
-        z-index: 15;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        /* background-color: white; */
-        color: white;
-        font-family: 'Optima', sans-serif;
         font-size: 5vw;
-        /* flex-grow: 1; */
-        /* padding-bottom: 3vw; */
     }
 
     h3{
-        float: right;
-        color: white;
-        font-family: 'Optima', sans-serif;
         font-size: 3vw;
         margin: 1vw;
 
