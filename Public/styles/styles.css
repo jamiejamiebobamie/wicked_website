@@ -3,6 +3,44 @@ html, body {
   background-color: black;
 }
 
+.index_buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+/* #index_about{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: white;
+    opacity: .5;
+} */
+
+#index_about,#index_grimoire, #index_download{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: white;
+    opacity: .5;
+    width: 35vw;
+    height: 4vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 2.5vw;
+    font-family: 'Optima', sans-serif;
+}
+
+/* #index_download{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: white;
+    opacity: .5;
+} */
+
 .container{
     /* display: flex;
     flex-direction: column; */
@@ -21,13 +59,18 @@ html, body {
 }
 
 #logo{
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     z-index:0;
+    width: 500px;
+    height:400px;
     /* position:fixed;
     top:-400px;
     left:-1110px; */
     /* transform: scale(.19); */
-    background-image: url('/media/imgs/backButton.png') left center;
+    background-image: url('/media/imgs/backButtonHover.png') left center;
     /* opacity: .3; */
 }
 

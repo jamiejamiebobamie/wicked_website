@@ -40,18 +40,15 @@ function showSlides(n) {
 }
 
 function removeAnimAddAnim(){
+    // book.classList.add("animation_open");
     book.classList.remove("animation_backward");
     book.classList.remove("animation_forward");
-    // book.classList.add("animation_open");
 }
 
 // Turn page forward.
 forward.addEventListener('click', function(e){
-    // $(".book_sprite").addClass("animation_forward");
     book.classList.add("animation_forward");
     book.style.animationIterationCount = "1";
-    // book.classList.add("animation_backward");
-    // book.animation_direction("reverse")
     plusSlides(1);
 })
 

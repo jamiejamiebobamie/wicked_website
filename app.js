@@ -50,9 +50,19 @@ app.listen(port);
         res.render('index');
         })
 
-// INDEX
+// ABOUT
+    app.get('/about', (req, res) => {
+        res.render('about');
+        })
+
+// GRIMOIRE
     app.get('/grimoire', (req, res) => {
         res.render('grimoire');
+        })
+
+// DOWNLOAD
+    app.get('/download', (req, res) => {
+        res.render('download');
         })
 
 module.exports = app;
