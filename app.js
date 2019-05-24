@@ -44,25 +44,30 @@ app.set('view engine', 'handlebars');
 
 app.listen(port);
 
+let homepage;
 
 // INDEX
     app.get('/', (req, res) => {
-        res.render('index');
+        homepage = true;
+        res.render('index',{homepage});
         })
 
 // ABOUT
     app.get('/about', (req, res) => {
-        res.render('about');
+        homepage = false;
+        res.render('about',{homepage});
         })
 
 // GRIMOIRE
     app.get('/grimoire', (req, res) => {
-        res.render('grimoire');
+        homepage = false;
+        res.render('grimoire',{homepage});
         })
 
 // DOWNLOAD
     app.get('/download', (req, res) => {
-        res.render('download');
+        homepage = false;
+        res.render('download',{homepage});
         })
 
 module.exports = app;
