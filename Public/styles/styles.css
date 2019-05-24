@@ -124,7 +124,7 @@ h3{
     float: right;
     color: white;
     font-family: 'Optima', sans-serif;
-    font-size: 1vw;
+    font-size: 2vw;
     margin: 1vw;
 
 }
@@ -236,7 +236,7 @@ h3{
 
     width: 300px;
     height: 230px;
-    background: url('/media/sprites/book_rollover_black_background.png') left center;
+    background: url('/media/sprites/book_rollover_black_background_CROPPED.png') left center;
     animation: openBook 3s steps(1) infinite;
 
 }
@@ -247,21 +247,26 @@ h3{
 }
 
 .animation_open{
+    /* animation-iteration-count: 1; */
     animation: openBook 3s steps(1) infinite;
 }
 
 .animation_forward{
+    /* animation-iteration-count: 1; */
+
     animation: turnPageForward 3s steps(86) forwards;
 }
 
 .animation_backward{
+    /* animation-iteration-count: 1; */
+
     animation: turnPageBackward 3s steps(86) forwards;
-} */
+}
 
 @keyframes openBook{
     /* 1 step */
-  from{background-position-x:-4500px;}
-  to{background-position-x:-4500px;}
+  from{background-position-x:0px;}
+  to{background-position-x:0px;}
 }
 
 @keyframes openingBookFlippingToEnd{
@@ -272,14 +277,14 @@ h3{
 
 @keyframes turnPageForward{
     /* 86 steps */
-  from{background-position-x:-4500px;}
-  to{background-position-x:-30300px;}
+  from{background-position-x:0px;}
+  to{background-position-x:-25800px;}
 }
 
 @keyframes turnPageBackward{
     /* 86 steps */
-  from{background-position-x:-30300px;}
-  to{background-position-x:-4500px;}
+  from{background-position-x:-25800px;}
+  to{background-position-x:0px;}
 }
 
 .monster{
