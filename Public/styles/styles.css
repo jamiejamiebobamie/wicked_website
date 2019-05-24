@@ -3,6 +3,17 @@ html, body {
   background-color: black;
 }
 
+.navbar{
+    z-index: 5;
+
+}
+
+.return{
+    float: right;
+        z-index: 5;
+
+}
+
 .index_buttons{
     display: flex;
     flex-direction: column;
