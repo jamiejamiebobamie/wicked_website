@@ -17,6 +17,7 @@ html, body {
 .index_buttons{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 /* #index_about{
