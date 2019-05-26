@@ -8,6 +8,10 @@ html, body {
 
 }
 
+.back_button{
+    margin-bottom: 1vw;
+}
+
 .return{
     float: right;
         z-index: 5;
