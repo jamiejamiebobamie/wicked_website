@@ -19,6 +19,14 @@ html, body {
 
 .download_instructions{
     margin-top: 5vw;
+    margin-right:7vw;
+    margin-left:7vw;
+}
+
+.about{
+    margin-top: 5vw;
+    margin-right:7vw;
+    margin-left:7vw;
 }
 
 .download{
@@ -191,7 +199,7 @@ p{
       text-indent: 1.5em;
 
     /* flex-grow: 1; */
-    /* padding-bottom: 3vw; */
+    margin-bottom: 2vw;
 }
 
 h3{
