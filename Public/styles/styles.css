@@ -86,43 +86,6 @@ html, body {
     margin-bottom: auto;
 }
 
-button{
-    background-color: transparent;
-    border-color: transparent;
-    width:20vw;
-    height: 20vw;
-}
-
-#book_button_back{
-    background: url('/media/imgs/icon_arrow4.png') left center;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-}
-
-#book_button_back:hover{
-    background: url('/media/imgs/icon_arrow4Hover.png') left center;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-}
-
-#book_button_forward{
-    background: url('/media/imgs/icon_arrow4.png') left center;
-    background-repeat: no-repeat;
-}
-
-#book_button_forward:hover{
-    background: url('/media/imgs/icon_arrow4Hover.png') left center;
-    background-repeat: no-repeat;
-}
-
-#book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
-    margin-top: auto;
-    margin-bottom: auto;
-    background-size: 13vw 5vw;
-}
-
 h1{
     color: white;
     font-family: 'Optima', sans-serif;
@@ -149,6 +112,7 @@ ul{
     font-size: 3vw;
     text-indent: 1.5em;
     margin-bottom: 5vw;
+    line-height: 4.5vw;
 }
 
 
@@ -212,13 +176,15 @@ h3{
 
 #character_background{
     /* Adds a static background of the character for when the animation 'pops' */
-    z-index:0;
-    /* position:fixed;
-    bottom:0px;
+    /* z-index:0; */
+    /* position:fixed; */
+    /* bottom:0px;
     left:10%; */
 }
 
 .character_sprite{
+    /* position: absolute; */
+    /* z-index:1; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -270,33 +236,76 @@ h3{
     margin-right: auto;
 }
 
-#book_background{
-    /* Adds a static background for when the animation 'pops' */
-    z-index:0;
-    /* position:fixed;
-    bottom:700px;
-    left:33%; */
-}
-
 button:hover + .character_sprite{
     background: url('/media/sprites/character_handUp.png') left center;
     animation: wand 5s steps(32) infinite alternate-reverse;
 }
 
-.book_sprite{
-    display: block;
+.book_sprite_anim{
+    position: absolute;
+    z-index: 1;
+    /* display: block; */
     /* margin-top:  5vw; */
-    margin-bottom: auto;
+    /* margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     width: 300px;
     height: 230px;
     background: url('/media/sprites/book_rollover_black_background_CROPPED.png') left center;
     animation: openBook 3s steps(1) infinite;
-
+}
+.book_sprite, #book_button_1, #book_button_2{
+    z-index: auto;
 }
 
-.book_sprite:hover, .book_sprite:active, .book_sprite:focus{}
+#book_sprite_background{
+    /* position: relative; */
+    /* Adds a static background for when the animation 'pops' */
+    z-index:0;
+    position:fixed;
+    /* bottom:700px;
+    left:33%; */
+}
+
+
+    button{
+        background-color: transparent;
+        border-color: transparent;
+        width:20vw;
+        height: 20vw;
+    }
+
+    #book_button_back{
+        background: url('/media/imgs/icon_arrow4.png') left center;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+    }
+
+    #book_button_back:hover{
+        background: url('/media/imgs/icon_arrow4Hover.png') left center;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+    }
+
+    #book_button_forward{
+        background: url('/media/imgs/icon_arrow4.png') left center;
+        background-repeat: no-repeat;
+    }
+
+    #book_button_forward:hover{
+        background: url('/media/imgs/icon_arrow4Hover.png') left center;
+        background-repeat: no-repeat;
+    }
+
+    #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        background-size: 13vw 5vw;
+        z-index: 1;
+
+    }
 
 .animation_open{
     animation: openBook 3s steps(1) infinite;
@@ -452,6 +461,15 @@ button:hover + .character_sprite{
         line-height: 6vw;
         font-size: 4vw;
         margin-bottom: 5vw;
+    }
+
+    ul{
+        color: white;
+        font-family: 'Optima', sans-serif;
+        font-size: 3vw;
+        text-indent: 1.5em;
+        margin-bottom: 5vw;
+        line-height: 4.5vw;
     }
 
     h3{
