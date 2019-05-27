@@ -172,6 +172,16 @@ h3{
     padding: 1vw;
 }
 
+.words{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.image{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
@@ -267,7 +277,7 @@ button:hover + .character_sprite{
 
 .book_sprite{
     display: block;
-    margin-top:  5vw;
+    /* margin-top:  5vw; */
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
