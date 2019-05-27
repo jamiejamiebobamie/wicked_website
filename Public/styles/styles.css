@@ -411,7 +411,7 @@ button:hover + .character_sprite{
 
     h1{
         letter-spacing: .05vw;
-        margin-top: -1vw;
+        /* margin-top: -1vw; */
         font-size: 10vw;
         padding-bottom: 2vw;
         /* flex-grow: 1; */
@@ -422,11 +422,12 @@ button:hover + .character_sprite{
         font-size: 7vw;
         letter-spacing: .05vw;
         line-height: 6vw;
+        padding-bottom: 2vw;
     }
 
     p{
         letter-spacing: .05vw;
-        line-height: 5.5vw;
+        line-height: 6vw;
         font-size: 4vw;
         margin-bottom: 5vw;
     }
@@ -449,6 +450,11 @@ button:hover + .character_sprite{
         margin-top:7vw;
         width:40vw;
         height:10vw;
+    }
+
+    #test_gif{
+        /* padding-top: -1vw; */
+        /* margin-bottom: -5vw; */
     }
 
 }
