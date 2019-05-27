@@ -118,6 +118,8 @@ button{
 }
 
 #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
+    margin-top: auto;
+    margin-bottom: auto;
     background-size: 13vw 5vw;
 }
 
@@ -159,8 +161,7 @@ h3{
     color: white;
     font-family: 'Optima', sans-serif;
     font-size: 2vw;
-    margin: 1vw;
-
+    margin-top: 1vw;
 }
 
 .slideshow-container{}
@@ -266,6 +267,8 @@ button:hover + .character_sprite{
 
 .book_sprite{
     display: block;
+    margin-top:  5vw;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -426,6 +429,7 @@ button:hover + .character_sprite{
     }
 
     p{
+        text-indent: 0em;
         letter-spacing: .05vw;
         line-height: 6vw;
         font-size: 4vw;
@@ -434,7 +438,7 @@ button:hover + .character_sprite{
 
     h3{
         font-size: 3.5vw;
-        margin: 1vw;
+        /* margin: 1vw; */
     }
 
     #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
