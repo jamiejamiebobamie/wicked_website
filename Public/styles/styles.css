@@ -42,7 +42,8 @@ html, body {
 .index_buttons{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    z-index: 3;
 }
 
 /* #index_about{
@@ -55,6 +56,7 @@ html, body {
 } */
 
 #index_about,#index_grimoire, #index_download{
+    z-index: 5;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -62,7 +64,7 @@ html, body {
     background-color: white;
     opacity: .5;
     width: 35vw;
-    height: 4vw;
+    height: 20vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
     font-size: 2.5vw;
@@ -112,6 +114,7 @@ html, body {
 }
 
 .character{
+    z-index: 0;
     /* position:absolute; */
     /* left: 50%; */
     /* margin-top:auto; */
@@ -133,8 +136,8 @@ html, body {
 
 button{
     background-color: transparent;
-    width: 13vw;
-    height: 13vw;
+    /* width: 13vw;
+    height: 13vw; */
     border-color: transparent;
 }
 
@@ -182,8 +185,8 @@ h1{
     /* font-size: 10vw; */
     font-size: 5vw;
     /* font-size: 5vw; */
-    padding-top: 2vw;
-    padding-bottom: 1vw;
+    /* padding-top: 2vw; */
+    padding-bottom: .5vw;
 }
 
 p{
@@ -196,7 +199,7 @@ p{
     font-family: 'Optima', sans-serif;
     /* font-size: 5vw; */
     font-size: 2.5vw;
-      text-indent: 1.5em;
+    text-indent: 1.5em;
 
     /* flex-grow: 1; */
     margin-bottom: 2vw;
@@ -277,17 +280,19 @@ h3{
 }
 
 .door_sprite{
+    transform: scale(.5);
     /* position:fixed; */
     /* bottom:0px;
     left:10%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /* margin-bottom: 3vw; */
     /* opacity: .5; */
     width: 560px;
-    height: 310px;
-    background: url('/media/sprites/door_sprite_560x310_35840_63steps.png') left center;
-    animation: shine 7s steps(64) infinite alternate-reverse;
+    height: 600px;
+    background: url('/media/sprites/door_sprite_560by600_36400_64steps.png') left center;
+    animation: shine 5s steps(64) infinite alternate-reverse;
 }
 
 @keyframes shine{
@@ -313,7 +318,7 @@ h3{
 }
 
 .book{
-    z-index: 16;
+    z-index: 3;
     display: flex;
     /* flex-direction: row; */
 }
@@ -326,7 +331,7 @@ h3{
     left:33%; */
 }
 
-.grimoire:hover + .character_sprite{
+button:hover + .character_sprite{
     background: url('/media/sprites/character_handUp.png') left center;
     animation: wand 5s steps(32) infinite alternate-reverse;
 }
