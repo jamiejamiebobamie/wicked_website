@@ -276,6 +276,25 @@ h3{
   to{background-position-x:-29760px;}
 }
 
+.door_sprite{
+    /* position:fixed; */
+    /* bottom:0px;
+    left:10%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* opacity: .5; */
+    width: 560px;
+    height: 310px;
+    background: url('/media/sprites/door_sprite_560x310_35840_63steps.png') left center;
+    animation: shine 7s steps(64) infinite alternate-reverse;
+}
+
+@keyframes shine{
+  from{background-position-x:0px;}
+  to{background-position-x:-35840px;}
+}
+
 .character_sprite:hover, .character_sprite:active, .character_sprite:focus{
 
     background: url('/media/sprites/character_handUp.png') left center;
