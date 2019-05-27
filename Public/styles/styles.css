@@ -143,6 +143,14 @@ h2{
     margin-bottom: 2vw;
 }
 
+ul{
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 4vw;
+    text-indent: 1.5em;
+    margin-bottom: 5vw;
+}
+
 
 p{
     z-index: 15;
