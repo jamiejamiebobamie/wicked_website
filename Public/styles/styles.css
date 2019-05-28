@@ -262,10 +262,21 @@ img {
 
 .download{
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+#download_instructions{
+    display: block;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2vw;
+    z-index:0;
+    background-image: url('/media/imgs/backButtonHover.png') left center;
 }
 
 
