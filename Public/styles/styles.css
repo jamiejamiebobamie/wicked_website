@@ -492,10 +492,8 @@ button:hover + .character_sprite{
 
     #about_screenshot{
         padding: 0vw;
-        /* width:500px;
-        height:312.5px; */
-        width:700px;
-        height:437.5;
+        width:500px;
+        height:312.5px;
         object-fit: contain;
     }
 
