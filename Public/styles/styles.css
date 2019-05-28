@@ -185,7 +185,15 @@ html, body {
     margin-right: auto;
 }
 
-.about_slides{
+.about_slideControls_container{
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+}
+
+.about_slideControls{
+    margin-left: -8vw;
     display: flex;
 }
 
@@ -203,12 +211,36 @@ html, body {
     width:1200px;
     height:750px;
     padding: 4vw;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto; */
     object-fit: contain;
+}
+
+#about_button_back{
+    background: url('/media/imgs/icon_arrow4.png') left center;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+}
+
+#about_button_back:hover{
+    background: url('/media/imgs/icon_arrow4Hover.png') left center;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+}
+
+#about_button_forward{
+    background: url('/media/imgs/icon_arrow4.png') left center;
+    background-repeat: no-repeat;
+}
+
+#about_button_forward:hover{
+    background: url('/media/imgs/icon_arrow4Hover.png') left center;
+    background-repeat: no-repeat;
+}
+
+#about_button_forward, #about_button_forward:hover, #about_button_back, #about_button_back:hover{
+    background-size: 13vw 5vw;
+    z-index: 1;
 }
 
 img {
@@ -474,27 +506,32 @@ button:hover + .character_sprite{
         margin-left:7vw;
     }
 
-    .about_mySlides{
-        margin-right:7vw;
-        margin-left:7vw;
-    }
-
     #index_about, #index_grimoire, #index_download{
         margin-top:7vw;
         width:40vw;
         height:10vw;
     }
 
+    .about_slideControls{
+        margin-left: -1vw;
+    }
+
     .about_mySlides{
-        width:100%;
+        margin-right:7vw;
+        margin-left:7vw;
+        /* width:100%; */
         margin-bottom: 5vw;
     }
 
     #about_screenshot{
         padding: 0vw;
-        width:500px;
-        height:312.5px;
+        width:800px;
+        height:531.25px;
         object-fit: contain;
+    }
+
+    #about_button_forward, #about_button_forward:hover, #about_button_back, #about_button_back:hover{
+        background-size: 16.5vw 7vw;
     }
 
 }

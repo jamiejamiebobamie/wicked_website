@@ -1,6 +1,6 @@
 const slides = document.getElementsByClassName("about_mySlides");
-const back = document.getElementById("book_button_back");
-const forward = document.getElementById("book_button_forward");
+const back = document.getElementById("about_button_back");
+const forward = document.getElementById("about_button_forward");
 
 
 //slideIndex and a variable to store the current slideIndex when it gets reset to 1 (the empty slide)
