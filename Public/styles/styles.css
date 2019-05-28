@@ -3,47 +3,21 @@ html, body {
   background-color: black;
 }
 
-.back_button{
-    margin-top: 8vw;
-    margin-bottom: 5vw;
-}
-
-.about_slides_container{
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about_slides{
+.container{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     display: flex;
+    flex-direction: column;
 }
 
-.return{
-    float: right;
-        z-index: 5;
-}
-
-.download_instructions{
-    margin-top: 5vw;
-    margin-right:7vw;
-    margin-left:7vw;
-}
-
-.about{
-    margin-top: 5vw;
-    margin-right:7vw;
-    margin-left:7vw;
-    margin-bottom: auto;
-}
-
-.download{
-    display: block;
+#logo{
     margin-top: auto;
-    margin-bottom: auto;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    z-index:0;
+    background-image: url('/media/imgs/backButtonHover.png') left center;
 }
 
 .index_buttons{
@@ -69,122 +43,10 @@ html, body {
     font-family: 'Optima', sans-serif;
 }
 
-.container{
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-#logo{
-    margin-top: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    z-index:0;
-    background-image: url('/media/imgs/backButtonHover.png') left center;
-}
-
 .character{
     z-index: 0;
 }
 
-#test_gif{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-h1{
-    color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 10vw;
-    padding-top: 2vw;
-    padding-bottom: 1vw;
-    margin-bottom: 2vw;
-}
-
-h2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 4vw;
-    text-indent: 1.5em;
-    margin-bottom: 2vw;
-}
-
-ul{
-    color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 3vw;
-    text-indent: 1.5em;
-    margin-bottom: 5vw;
-    line-height: 4.5vw;
-}
-
-
-p{
-    z-index: 15;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 2.5vw;
-    text-indent: 1.5em;
-    margin-bottom: 2vw;
-}
-
-h3{
-    float: right;
-    color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 2vw;
-    margin-top: 1vw;
-}
-
-.slideshow-container{}
-
-.mySlides{
-    display: flex;
-    flex-direction: column;
-    padding: 1vw;
-}
-
-.words{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.image{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-.character{}
 
 #character_background{
     /* Adds a static background of the character for when the animation 'pops' */
@@ -239,7 +101,221 @@ h3{
   to{background-position-x:-29760px;}
 }
 
-.slideshow-container{}
+
+.monster{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top:auto;
+    left: 50%;
+    margin: 1vw;
+    transform: translateY(5px) 4s infinite alternate-reverse;
+}
+
+.candle_test{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: -100px;
+    top:auto;
+    margin-top: -30vw;
+    left: 50%;
+    margin: 1vw;
+    transform: translateY(100px) 4s infinite alternate-reverse;
+    z-index: 5;
+    background-color: pink;
+}
+
+.monster_sprites{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top:auto;
+    left: 50%;
+}
+
+.monster0_sprite, .monster1_sprite, .monster2_sprite, .monster3_sprite{
+    width: 40px;
+    height: 20px;
+    background: url('/media/sprites/monster_open_eyes_sprite4.png') left center;
+    animation: openEyes 10s steps(414) infinite alternate-reverse;
+    animation-delay: 1s;
+}
+
+.monster1_sprite{
+     animation-delay: 4s;
+}
+
+.monster2_sprite{
+     animation-delay: 3s;
+}
+
+.monster3_sprite{
+      animation-delay: 5s;
+}
+
+@keyframes openEyes{
+    /* 415 steps */
+  from{background-position-x:-16560px;}
+  to{background-position-x:0px;}
+}
+
+/* Back button for all non-index pages. (About, Grimoire, and Download.) */
+.back_button{
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+}
+
+/* About page divs in order of appearance. */
+
+.about{
+    margin-top: 5vw;
+    margin-right:7vw;
+    margin-left:7vw;
+    margin-bottom: auto;
+}
+
+.about_slides_container{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_slides{
+    display: flex;
+}
+
+.about_slideshow{
+
+}
+
+.about_mySlides{
+    width:100%;
+    /* padding: 1vw; */
+    margin-bottom: 5vw;
+}
+
+#about_screenshot{
+    width:1200px;
+    height:750px;
+    padding: 4vw;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; */
+    object-fit: contain;
+}
+
+img {
+    /* width:1000px;
+    height:625px; */
+  /* object-fit: contain; */
+}
+
+.return{
+    float: right;
+    z-index: 5;
+}
+
+.download_instructions{
+    margin-top: 5vw;
+    margin-right:7vw;
+    margin-left:7vw;
+}
+
+.download{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#test_gif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1{
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 10vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    margin-bottom: 2vw;
+}
+
+h2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+}
+
+ul{
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 3vw;
+    text-indent: 1.5em;
+    margin-bottom: 5vw;
+    line-height: 4.5vw;
+}
+
+p{
+    z-index: 15;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 2.5vw;
+    text-indent: 1.5em;
+    margin-bottom: 2vw;
+}
+
+h3{
+    float: right;
+    color: white;
+    font-family: 'Optima', sans-serif;
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+
+.mySlides{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
 
 .book{
     z-index: 3;
@@ -255,31 +331,19 @@ button:hover + .character_sprite{
 }
 
 .book_sprite_anim{
-    position: absolute;
     z-index: 1;
-    /* display: block; */
-    /* margin-top:  5vw; */
-    /* margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto; */
+    display: block;
+    margin-top:  auto;
+    margin-bottom: auto;
     width: 300px;
     height: 230px;
     background: url('/media/sprites/book_rollover_black_background_CROPPED.png') left center;
     animation: openBook 3s steps(1) infinite;
 }
+
 .book_sprite, #book_button_1, #book_button_2{
     z-index: auto;
 }
-
-#book_sprite_background{
-    /* position: relative; */
-    /* Adds a static background for when the animation 'pops' */
-    z-index:0;
-    position:fixed;
-    /* bottom:700px;
-    left:33%; */
-}
-
 
     button{
         background-color: transparent;
@@ -356,109 +420,6 @@ button:hover + .character_sprite{
   to{background-position-x:0px;}
 }
 
-.monster{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    top:auto;
-    left: 50%;
-    margin: 1vw;
-    transform: translateY(5px) 4s infinite alternate-reverse;
-}
-
-.candle_test{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: -100px;
-    top:auto;
-    margin-top: -30vw;
-    left: 50%;
-    margin: 1vw;
-    transform: translateY(100px) 4s infinite alternate-reverse;
-    z-index: 5;
-    background-color: pink;
-}
-
-.monster_sprites{
-    z-index: 1;
-}
-
-.monster_sprites{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    top:auto;
-    left: 50%;
-}
-
-.monster0_sprite, .monster1_sprite, .monster2_sprite, .monster3_sprite{
-    width: 40px;
-    height: 20px;
-    background: url('/media/sprites/monster_open_eyes_sprite4.png') left center;
-    animation: openEyes 10s steps(414) infinite alternate-reverse;
-    animation-delay: 1s;
-}
-
-#monster_background0{
-    /* adds a static background of open eyes for when the animation 'pops' out */
-    /* position:fixed;
-    bottom:475px;*/
-    /* left:40%; */
-    width: 40px;
-    height: 20px;
-}
-
-.monster1_sprite{
-     animation-delay: 4s;
-}
-
-#monster_background1{
-    /* adds a static background of open eyes for when the animation 'pops' out */
-    /* position:fixed;
-    bottom:450px;*/
-    /* left:25%; */
-    width: 40px;
-    height: 20px;
-}
-
-.monster2_sprite{
-     animation-delay: 3s;
-}
-
-#monster_background2{
-    /* adds a static background of open eyes for when the animation 'pops' out */
-    /* position:fixed;
-    bottom:450px;
-    left:35%; */
-    width: 40px;
-    height: 20px;
-}
-
-.monster3_sprite{
-      animation-delay: 5s;
-}
-
-#monster_background3{
-    /* adds a static background of open eyes for when the animation 'pops' out */
-    /* position:fixed;
-    bottom:500px;
-    left:30%; */
-    width: 40px;
-    height: 20px;
-}
-
-@keyframes openEyes{
-    /* 415 steps */
-  from{background-position-x:-16560px;}
-  to{background-position-x:0px;}
-}
-
-#test_gif{
-    margin-top: auto;
-}
-
 .grimoire{
     display: flex;
     flex-direction: column;
@@ -513,15 +474,29 @@ button:hover + .character_sprite{
         margin-left:7vw;
     }
 
+    .about_mySlides{
+        margin-right:7vw;
+        margin-left:7vw;
+    }
+
     #index_about, #index_grimoire, #index_download{
         margin-top:7vw;
         width:40vw;
         height:10vw;
     }
 
-    #test_gif{
-        /* padding-top: -1vw; */
-        /* margin-bottom: -5vw; */
+    .about_mySlides{
+        width:100%;
+        margin-bottom: 5vw;
+    }
+
+    #about_screenshot{
+        padding: 0vw;
+        /* width:500px;
+        height:312.5px; */
+        width:700px;
+        height:437.5;
+        object-fit: contain;
     }
 
 }
