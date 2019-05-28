@@ -44,7 +44,7 @@ html, body {
 }
 
 .character{
-    z-index: 0;
+    z-index: 1;
 }
 
 
@@ -107,33 +107,25 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     top:auto;
-    left: 50%;
+    /* left: 50%; */
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
     margin: 1vw;
     transform: translateY(5px) 4s infinite alternate-reverse;
+    /* background-color: pink; */
 }
 
 .candle_test{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: -100px;
-    top:auto;
-    margin-top: -30vw;
-    left: 50%;
-    margin: 1vw;
-    transform: translateY(100px) 4s infinite alternate-reverse;
-    z-index: 5;
-    background-color: pink;
-}
-
-.monster_sprites{
-    z-index: 1;
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    top:auto;
-    left: 50%;
+    justify-content: space-around;
+    margin-top:600px;
+    /* padding: 5vw; */
+    width: 100%;
+    z-index: 2;
+    background-color: pink;
 }
 
 .monster0_sprite, .monster1_sprite, .monster2_sprite, .monster3_sprite{
@@ -535,6 +527,13 @@ button:hover + .character_sprite{
     }
 
     #about_screenshot{
+        padding: 0vw;
+        width:800px;
+        height:531.25px;
+        object-fit: contain;
+    }
+
+    #download_instructions{
         padding: 0vw;
         width:800px;
         height:531.25px;
