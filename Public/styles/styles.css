@@ -14,63 +14,84 @@ html, body {
 
 .mockup{
     position: absolute;
-    top: 500px;
-    left: 500px;
-    z-index: 0
+    top: 590px;
+    left: 740px;
+    z-index: 0;
 }
 
 .monster1{
     position: absolute;
-    left: 740px;
-    top: 660px;
+    left: 748px;
+    top: 631px;
+    /* opacity: .5; */
+
 }
 
 .monster2{
     position: absolute;
-    left: 840px;
-    top: 630px;
+    left: 818px;
+    top: 619px;
+    /* opacity: .5; */
+
 }
 
 .monster3{
     position: absolute;
-    left: 870px;
-    top: 640px;
+    left: 865px;
+    top: 638px;
+    /* opacity: .5; */
+
 }
 
 .monster4{
     position: absolute;
-    left: 890px;
-    top: 600px;
+    left: 898px;
+    top: 604px;
+    /* opacity: .5; */
+
 }
 
+/*  "leader" centerpiece  */
 .monster5{
     position: absolute;
-    left: 945px;
-    top: 630px;
+    left: 944px;
+    top: 648px;
+    /* opacity: .5; */
+
 }
 
 .monster6{
     position: absolute;
-    left: 1025px;
-    top: 635px;
+    left: 1020px;
+    top: 634px;
+    /* opacity: .5; */
+
 }
 
+
+/* far-right */
 .monster7{
     position: absolute;
-    left: 1150px;
-    top: 630px;
+    left: 1140px;
+    top: 627px;
+    /* opacity: .5; */
+
 }
 
 .monster8{
     position: absolute;
-    left: 1080px;
-    top: 620px;
+    left: 1067px;
+    top: 613px;
+    /* opacity: .5; */
+
 }
 
 .monster9{
     position: absolute;
-    left: 990px;
-    top: 600px;
+    left: 981px;
+    top: 606px;
+    /* opacity: .5; */
+
 }
 
 .container{
@@ -207,39 +228,39 @@ html, body {
 }
 
 .monster1_sprite{
-     animation-delay: 1s;
+     animation-delay: 4.7s;
 }
 
 .monster2_sprite{
-     animation-delay: 8s;
+     animation-delay: 2.4s;
 }
 
 .monster3_sprite{
-      animation-delay: 6s;
+      animation-delay: 2s;
 }
 
 .monster4_sprite{
-     /* animation-delay: 4s; */
+     animation-delay: 4.4s;
 }
 
 .monster5_sprite{
-     animation-delay: 7s;
+     animation-delay: 1s;
 }
 
 .monster6_sprite{
-      animation-delay: 5s;
+      animation-delay: 3s;
 }
 
 .monster7_sprite{
-     animation-delay: 4s;
+     animation-delay: 3.6s;
 }
 
 .monster8_sprite{
-     animation-delay: 3s;
+     animation-delay: 4s;
 }
 
 .monster9_sprite{
-      animation-delay: 9s;
+      animation-delay: 5s;
 }
 
 @keyframes openEyes{
