@@ -22,8 +22,8 @@ html, body {
     /* left: -50%; */
 
     margin-top: auto;
-    padding-top: -10vw;
-
+    /* padding-top: -15vw; */
+    margin-bottom: -5vw;
     /* display: block;
     margin-left: auto;
     margin-right: auto;
@@ -132,8 +132,11 @@ html, body {
 
 .index_buttons{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    /* flex-direction: column; */
     /* flex-grow: 1; */
+
     z-index: 3;
 }
 
@@ -145,15 +148,18 @@ html, body {
     color: black;
     background-color: white;
     opacity: .5;
-    width: 35vw;
-    height: 20vw;
+    width: 30vw;
+    height: 5vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     font-size: 2.5vw;
     font-family: 'Optima', sans-serif;
 }
 
 .character{
+    /* background-color: pink; */
     z-index: 1;
 }
 
@@ -186,6 +192,8 @@ html, body {
 .door_sprite{
     /* background-color: pink; */
     margin-bottom: -5vw;
+    /* margin-bottom: -30vw; */
+
     transform: scale(.5);
     display: block;
     margin-left: auto;
@@ -194,6 +202,19 @@ html, body {
     height: 600px;
     background: url('/media/sprites/door_sprite_560by600_36400_64steps.png') left center;
     animation: shine 5s steps(64) infinite alternate-reverse;
+}
+
+.candle_test{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-top:600px; */
+    margin-bottom: -200px;
+    /* margin-bottom: 10%; */
+    width: 100%;
+    z-index: 4;
+    /* background-color: pink; */
 }
 
 @keyframes shine{
@@ -227,17 +248,7 @@ html, body {
     /* background-color: pink; */
 }
 
-.candle_test{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top:600px;
-    /* padding: 5vw; */
-    width: 100%;
-    z-index: 2;
-    background-color: pink;
-}
+
 
 .monster1_sprite, .monster2_sprite, .monster3_sprite, .monster4_sprite,.monster5_sprite, .monster6_sprite, .monster7_sprite, .monster8_sprite, .monster9_sprite{
     width: 40px;
