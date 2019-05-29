@@ -1,7 +1,7 @@
 const slides = document.getElementsByClassName("about_mySlides");
 const back = document.getElementById("about_button_back");
 const forward = document.getElementById("about_button_forward");
-
+let timer;
 
 //slideIndex and a variable to store the current slideIndex when it gets reset to 1 (the empty slide)
 let slideIndex = 1;
@@ -32,6 +32,12 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
+}
+
+timer = setInterval(timerSlides,7000);
+
+function timerSlides() {
+  showSlides(slideIndex += 1);
 }
 
 // Turn page forward.
