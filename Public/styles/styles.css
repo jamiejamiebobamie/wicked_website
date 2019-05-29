@@ -12,6 +12,21 @@ html, body {
     z-index: 1;
 }
 
+.monster_pack{
+    transform: scale(.25);
+    /* opacity: .5; */
+    position: absolute;
+    top: 800px;
+    /* left: -155px; */
+    /* left: -50%; */
+    /* margin-top: auto;
+    padding-top: -10vw; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:15;
+}
+
 .mockup{
     position: absolute;
     top: 590px;
