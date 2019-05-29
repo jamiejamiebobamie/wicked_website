@@ -5,7 +5,7 @@ const download = document.getElementById("index_download");
 
 about.addEventListener('click', function(e){
     console.log("about");
-    window.location.href = "/about";
+    window.location.href = "/monster";
 })
 
 

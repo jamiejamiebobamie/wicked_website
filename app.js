@@ -70,4 +70,10 @@ let homepage;
         res.render('download',{homepage});
         })
 
+// Monster eye mockup route
+    app.get('/monster', (req, res) => {
+        homepage = false;
+        res.render('monster',{homepage});
+        })
+
 module.exports = app;

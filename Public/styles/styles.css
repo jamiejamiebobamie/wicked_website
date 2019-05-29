@@ -3,6 +3,76 @@ html, body {
   background-color: black;
 }
 
+.monster_eyes{
+    display: block;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.mockup{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    z-index: 0
+}
+
+.monster1{
+    position: absolute;
+    left: 740px;
+    top: 660px;
+}
+
+.monster2{
+    position: absolute;
+    left: 840px;
+    top: 630px;
+}
+
+.monster3{
+    position: absolute;
+    left: 870px;
+    top: 640px;
+}
+
+.monster4{
+    position: absolute;
+    left: 890px;
+    top: 600px;
+}
+
+.monster5{
+    position: absolute;
+    left: 945px;
+    top: 630px;
+}
+
+.monster6{
+    position: absolute;
+    left: 1025px;
+    top: 635px;
+}
+
+.monster7{
+    position: absolute;
+    left: 1150px;
+    top: 630px;
+}
+
+.monster8{
+    position: absolute;
+    left: 1080px;
+    top: 620px;
+}
+
+.monster9{
+    position: absolute;
+    left: 990px;
+    top: 600px;
+}
+
 .container{
     width: 100%;
     height: 100%;
@@ -128,7 +198,7 @@ html, body {
     background-color: pink;
 }
 
-.monster0_sprite, .monster1_sprite, .monster2_sprite, .monster3_sprite{
+.monster1_sprite, .monster2_sprite, .monster3_sprite, .monster4_sprite,.monster5_sprite, .monster6_sprite, .monster7_sprite, .monster8_sprite, .monster9_sprite{
     width: 40px;
     height: 20px;
     background: url('/media/sprites/monster_open_eyes_sprite4.png') left center;
@@ -137,15 +207,39 @@ html, body {
 }
 
 .monster1_sprite{
-     animation-delay: 4s;
+     animation-delay: 1s;
 }
 
 .monster2_sprite{
-     animation-delay: 3s;
+     animation-delay: 8s;
 }
 
 .monster3_sprite{
+      animation-delay: 6s;
+}
+
+.monster4_sprite{
+     /* animation-delay: 4s; */
+}
+
+.monster5_sprite{
+     animation-delay: 7s;
+}
+
+.monster6_sprite{
       animation-delay: 5s;
+}
+
+.monster7_sprite{
+     animation-delay: 4s;
+}
+
+.monster8_sprite{
+     animation-delay: 3s;
+}
+
+.monster9_sprite{
+      animation-delay: 9s;
 }
 
 @keyframes openEyes{
