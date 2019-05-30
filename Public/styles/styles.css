@@ -522,6 +522,25 @@ button:hover + .character_sprite{
     animation: openBook 3s steps(1) infinite;
 }
 
+.logo_sprite{
+    z-index: 1;
+    display: block;
+    margin-top:  auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    height: 300px;
+    background: url('/media/sprites/logo_spritesheet_750by300_29250_38steps.png') left center;
+    animation: logoAnim 4s steps(38) infinite;
+}
+
+@keyframes logoAnim{
+    /* 1 step */
+  from{background-position-x:0px;}
+  to{background-position-x:-28500px;}
+}
+
 .book_sprite, #book_button_1, #book_button_2{
     z-index: auto;
 }
@@ -656,8 +675,9 @@ button:hover + .character_sprite{
     }
 
     #index_about, #index_grimoire, #index_download{
-        margin-top:7vw;
+        /* margin-top:7vw; */
         width:40vw;
+        padding: 2vw;
         height:10vw;
     }
 
@@ -688,6 +708,10 @@ button:hover + .character_sprite{
 
     #about_button_forward, #about_button_forward:hover, #about_button_back, #about_button_back:hover{
         background-size: 16.5vw 7vw;
+    }
+
+    .logo_sprite{
+        margin-top: 3vw;
     }
 
 }
