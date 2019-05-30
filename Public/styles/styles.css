@@ -631,7 +631,8 @@ button:hover + .character_sprite{
     }
 
     .logo_sprite{
-        margin-top: 1vw;
+        /* margin-top: 3vw; */
+        /* margin-bottom: -.5vw; */
     }
 
 }
