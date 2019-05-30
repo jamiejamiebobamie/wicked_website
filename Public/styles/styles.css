@@ -161,7 +161,7 @@ html, body {
 }
 
 .monster_pack{
-    transform: scale(.25);
+    /* transform: scale(.25); */
     /* opacity: .5; */
     /* position: absolute;
     top: 800px; */
@@ -169,13 +169,22 @@ html, body {
     /* left: -155px; */
     /* left: -50%; */
 
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 1vw;
+    background-color: orange;
+
+    width:400;
+    height:64.65;
+
+
     margin-top: auto;
     /* padding-top: -15vw; */
-    margin-bottom: -100px;
-    /* display: block;
+    /* margin-bottom: -100px; */
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    z-index:15; */
+    /* z-index:15; */
 }
 
 
