@@ -3,6 +3,15 @@ html, body {
   background-color: black;
 }
 
+@font-face {
+  font-family: 'Slenderman';
+  src: url('/fonts/Slenderman-Regular.eot');
+  src: url('/fonts/Slenderman-Regular.woff') format('woff');
+  src: url('/fonts/Slenderman-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container{
     /* background-color: yellow; */
     width: 100%;
@@ -12,7 +21,6 @@ html, body {
     flex-direction: column;
     /* margin-bottom: 1vw; */
     flex-shrink: 0;
-
 }
 
 .character{
@@ -33,7 +41,8 @@ html, body {
     justify-content: space-around;
     /* flex-direction: column; */
     /* flex-grow: 1; */
-
+    padding-left: 15vw;
+    padding-right: 15vw;
     z-index: 3;
 }
 
@@ -72,8 +81,7 @@ html, body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: black;
-    background-color: white;
+
     opacity: .5;
     width: 30vw;
     height: 5vw;
@@ -81,8 +89,20 @@ html, body {
     margin-bottom: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    font-size: 2.5vw;
-    font-family: 'Optima', sans-serif;
+    font-size: 5vw;
+    border-radius: 5px;
+
+    color: white;
+    border-color: white;
+        background-color: transparent;
+    /* font-family: 'Optima', sans-serif; */
+    font-family: 'Slenderman';
+}
+
+#index_about:hover,#index_grimoire:hover, #index_download:hover{
+        color: black;
+    background-color: white;
+
 }
 
 .candle_test{
@@ -91,10 +111,10 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     /* margin-top:600px; */
-    margin-bottom: -250px;
+
     /* margin-bottom: 10%; */
     width: 100%;
-    z-index: 4;
+    z-index: 2;
     /* background-color: red; */
 }
 
@@ -107,10 +127,12 @@ html, body {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -250px;
+    /* margin-top: -600px; */
     width: 900px;
     height: 380px;
     background: url('/media/sprites/candle_sprite_test_900by380_85500_94steps.png') left center;
-    animation: candle_float 10s steps(94) infinite;
+    animation: candle_float 15s steps(94) infinite;
 }
 
 @keyframes candle_float{
@@ -392,8 +414,8 @@ img {
 
 h1{
     color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 10vw;
+    font-family: 'Slenderman';
+    font-size: 20vw;
     padding-top: 2vw;
     padding-bottom: 1vw;
     margin-bottom: 2vw;
@@ -404,15 +426,15 @@ h2{
     margin-left: auto;
     margin-right: auto;
     color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 4vw;
+    font-family: 'Slenderman';
+    font-size: 8vw;
     margin-bottom: 2vw;
 }
 
 ul{
     color: white;
     font-family: 'Optima', sans-serif;
-    font-size: 3vw;
+    font-size: 6vw;
     text-indent: 1.5em;
     margin-bottom: 5vw;
     line-height: 4.5vw;
@@ -424,8 +446,8 @@ p{
     margin-left: auto;
     margin-right: auto;
     color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 2.5vw;
+    font-family: 'Slenderman';
+    font-size: 5vw;
     text-indent: 1.5em;
     margin-bottom: 2vw;
 }
@@ -433,8 +455,8 @@ p{
 h3{
     float: right;
     color: white;
-    font-family: 'Optima', sans-serif;
-    font-size: 2vw;
+    font-family: 'Slenderman';
+    font-size: 4vw;
     margin-top: 1vw;
 }
 
@@ -460,6 +482,10 @@ h3{
 @keyframes fade {
   from {opacity: 0}
   to {opacity: 1}
+}
+
+ul{
+    font-family: 'Slenderman';
 }
 
 .book{
@@ -583,14 +609,14 @@ button:hover + .character_sprite{
     h1{
         letter-spacing: .05vw;
         /* margin-top: -1vw; */
-        font-size: 10vw;
+        font-size: 20vw;
         padding-bottom: 2vw;
         /* flex-grow: 1; */
     }
 
     h2{
         text-indent: 0em;
-        font-size: 7vw;
+        font-size: 14vw;
         letter-spacing: .05vw;
         line-height: 6vw;
         padding-bottom: 2vw;
@@ -600,21 +626,21 @@ button:hover + .character_sprite{
         text-indent: 0em;
         letter-spacing: .05vw;
         line-height: 6vw;
-        font-size: 4vw;
+        font-size: 8vw;
         margin-bottom: 5vw;
     }
 
     ul{
         color: white;
         font-family: 'Optima', sans-serif;
-        font-size: 3vw;
+        font-size: 6vw;
         text-indent: 1.5em;
         margin-bottom: 5vw;
         line-height: 4.5vw;
     }
 
     h3{
-        font-size: 3.5vw;
+        font-size: 7vw;
         /* margin: 1vw; */
     }
 
