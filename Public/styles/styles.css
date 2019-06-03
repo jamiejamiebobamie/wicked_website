@@ -41,8 +41,8 @@ html, body {
     justify-content: space-around;
     /* flex-direction: column; */
     /* flex-grow: 1; */
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     z-index: 3;
 }
 
@@ -670,7 +670,7 @@ button:hover + .character_sprite{
     #index_about, #index_grimoire, #index_download{
         /* margin-top:7vw; */
         width:40vw;
-        padding: 2vw;
+        padding: 1vw;
         height:10vw;
     }
 
