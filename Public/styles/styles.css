@@ -290,9 +290,58 @@ html, body {
 
 /* Back button for all non-index pages. (About, Grimoire, and Download.) */
 .back_button{
+    display: flex;
     margin-top: 8vw;
     margin-bottom: 5vw;
 }
+
+h4{
+    color: white;
+    font-family: 'Slenderman';
+    font-size: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-left: auto;
+    display: block;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    /* margin-bottom: 2vw; */
+    padding-right: 100px;
+    letter-spacing: .05vw;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+#back_button_img, #back_button_img:hover{
+    z-index: 1;
+    display: block;
+    margin-top: -400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    transform: scale(.2);
+}
+
+#back_button_img{
+    background: url('/media/imgs/back_button_hover.png') left center;
+    width:1305px;
+    height:838px;
+}
+
+/* #back_button_img{
+    background: url('/media/imgs/back_button.png') left center;
+    width:1305px;
+    height:838px;
+}
+
+#back_button_img:hover{
+    background: url('/media/imgs/back_button_hover.png') left center;
+    width:1305px;
+    height:838px;
+} */
 
 /* About page divs in order of appearance. */
 
