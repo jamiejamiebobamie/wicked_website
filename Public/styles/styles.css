@@ -669,9 +669,10 @@ button:hover + .character_sprite{
 
     #index_about, #index_grimoire, #index_download{
         /* margin-top:7vw; */
-        width:40vw;
-        padding: 1vw;
-        height:10vw;
+        width:50vw;
+        /* padding: 1vw; */
+        height:15vw;
+        font-size: 7vw;
     }
 
     .about_slideControls{
