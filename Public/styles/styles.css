@@ -673,8 +673,9 @@ button:hover + .character_sprite{
         /* margin-top:7vw; */
         width:50vw;
         /* padding: 1vw; */
-        height:15vw;
+        height:17vw;
         font-size: 6vw;
+        /* color */
     }
 
     .about_slideControls{
