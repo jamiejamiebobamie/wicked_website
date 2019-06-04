@@ -321,7 +321,7 @@ h4{
 .back_button{
     display: flex;
     margin-top: 8vw;
-    margin-bottom: -300px;
+    /* margin-bottom: -300px; */
     /* display: block;
     margin-top: auto;
     margin-bottom: auto;
@@ -333,6 +333,7 @@ h4{
     display: block;
     margin-top: -400px;
     margin-left: 40vw;
+    /* margin-bottom: 400px; */
     /* margin-right: auto; */
     background: url('/media/imgs/back_button_hover.png') left center;
     width:1305px;
@@ -351,7 +352,8 @@ h4{
     background: url('/media/imgs/back_button_hover.png') left center;
     width:1305px;
     height:838px;
-} */
+    background-color:#9B3201;
+}*/
 
 /* About page divs in order of appearance. */
 
@@ -440,7 +442,7 @@ img {
 }
 
 .download_instructions{
-    margin-top: 5vw;
+    margin-top: 15vw;
     margin-right:7vw;
     margin-left:7vw;
 }
@@ -669,6 +671,10 @@ button:hover + .character_sprite{
 .grimoire{
     display: flex;
     flex-direction: column;
+}
+
+#grimoire_slideShow_container{
+    margin-top: -300px;
 }
 
 @media only screen and (max-width: 1300px) {
