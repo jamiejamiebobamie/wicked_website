@@ -178,7 +178,7 @@ html, body {
 .character_sprite{
     /* position: absolute; */
     /* z-index:1; */
-    margin-top: 20px;
+    margin-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
