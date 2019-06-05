@@ -62,6 +62,7 @@ html, body {
     height: 300px;
     background: url('/media/sprites/logo_spritesheet_750by300_29250_38steps_copy.png') left center;
     animation: logoAnim 4s steps(38) infinite;
+    transform: scale(.75);
 }
 
 @keyframes logoAnim{
@@ -89,8 +90,8 @@ html, body {
     opacity: .5;
     width: 30vw;
     height: 10vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    /* margin-top: .5vw; */
+    /* margin-bottom: .5vw; */
     margin-left: 1vw;
     margin-right: 1vw;
     font-size: 5vw;
@@ -99,7 +100,7 @@ html, body {
 
     color: white;
     border-color: white;
-        background-color: transparent;
+    background-color: transparent;
     font-family: 'Slenderman';
 }
 
@@ -114,7 +115,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* margin-top:600px; */
+    margin-top:100px;
 
     /* margin-bottom: 10%; */
     width: 100%;
@@ -125,18 +126,20 @@ html, body {
 
 .candle_sprite_test{
     /* background-color: green; */
-    z-index: 1;
+    z-index: 0;
     display: block;
-    margin-top:  auto;
+    /* margin-top:  50px; */
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -250px;
-    /* margin-top: -600px; */
+    margin-bottom: -350px;
+    margin-top: -50px;
     width: 900px;
     height: 380px;
     background: url('/media/sprites/candle_sprite_test_900by380_85500_94steps.png') left center;
     animation: candle_float 15s steps(94) infinite;
+    transform: scale(.75);
+
 }
 
 @keyframes candle_float{
@@ -147,8 +150,9 @@ html, body {
 
 .door_sprite{
     /* background-color: pink; */
-    margin-bottom: -5vw;
-    /* margin-bottom: -30vw; */
+    margin-top: 100px;
+    margin-bottom: -300px;
+        /* margin-bottom: -30vw; */
 
     transform: scale(.5);
     display: block;
@@ -158,6 +162,8 @@ html, body {
     height: 600px;
     background: url('/media/sprites/door_sprite_560by600_36400_64steps.png') left center;
     animation: shine 5s steps(64) infinite alternate-reverse;
+    transform: scale(.395);
+
 }
 
 
@@ -177,6 +183,8 @@ html, body {
     height: 447px;
     background: url('/media/sprites/character_handDown.png') left center;
     animation: idle 4s steps(32) infinite alternate-reverse;
+    transform: scale(.75);
+
 }
 
 @keyframes idle{
@@ -188,6 +196,8 @@ html, body {
 .character_sprite:hover, .character_sprite:active, .character_sprite:focus{
     background: url('/media/sprites/character_handUp.png') left center;
     animation: wand 5s steps(32) infinite alternate-reverse;
+    transform: scale(.75);
+
 
 }
 
@@ -229,13 +239,14 @@ html, body {
     height:64.65;
 
 
-    margin-top: auto;
+    margin-top: 50px;
     /* padding-top: -15vw; */
-    /* margin-bottom: -100px; */
+    margin-bottom: -50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* z-index:15; */
+    transform: scale(.75);
 }
 
 
