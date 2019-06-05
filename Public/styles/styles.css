@@ -54,7 +54,7 @@ html, body {
     padding: 130px;
     z-index: 1;
     display: block;
-    /* margin-top:  1vw; */
+    margin-top:  30px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -84,16 +84,14 @@ html, body {
 #index_about,#index_grimoire, #index_download{
     z-index: 5;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 
     opacity: .5;
     width: 30vw;
     height: 10vw;
-    margin-top: .5vw;
-    margin-bottom: .5vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     font-size: 5vw;
     border-radius: 5px;
     letter-spacing: .1vw;
@@ -135,7 +133,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -350px;
-    margin-top: -50px;
+    margin-top: -10px;
     width: 900px;
     height: 380px;
     background: url('/media/sprites/candle_sprite_test_900by380_85500_94steps.png') left center;
@@ -152,7 +150,7 @@ html, body {
 
 .door_sprite{
     /* background-color: pink; */
-    margin-top: 85px;
+    margin-top: 0px;
     margin-bottom: -300px;
         /* margin-bottom: -30vw; */
     transform: scale(.5);
@@ -163,7 +161,7 @@ html, body {
     height: 600px;
     background: url('/media/sprites/door_sprite_560by600_36400_64steps.png') left center;
     animation: shine 5s steps(64) infinite alternate-reverse;
-    transform: scale(.395);
+    transform: scale(.25);
 
 }
 
@@ -177,7 +175,8 @@ html, body {
 .character_sprite{
     /* position: absolute; */
     /* z-index:1; */
-    margin-top: 40px;
+    margin-top: -20px;
+    margin-bottom: -50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -185,7 +184,7 @@ html, body {
     height: 447px;
     background: url('/media/sprites/character_handDown.png') left center;
     animation: idle 4s steps(32) infinite alternate-reverse;
-    transform: scale(.9);
+    transform: scale(.75);
 
 }
 
@@ -198,9 +197,7 @@ html, body {
 .character_sprite:hover, .character_sprite:active, .character_sprite:focus{
     background: url('/media/sprites/character_handUp.png') left center;
     animation: wand 5s steps(32) infinite alternate-reverse;
-    transform: scale(.9);
-
-
+    transform: scale(.75);
 }
 
 @keyframes wand{
@@ -769,14 +766,56 @@ button:hover + .character_sprite{
         margin-left:7vw;
     }
 
-    #index_about, #index_grimoire, #index_download{
+    #index_about, #index_grimoire, #index_download, #index_about::after{
         /* margin-top:7vw; */
         width:50vw;
         /* padding: 1vw; */
         height:17vw;
-        font-size: 6vw;
+        font-size: 10vw;
         /* color */
     }
+/*
+    #index_about{
+        visibility: hidden;
+    }
+
+    #index_about::after{
+        /* content:'goodbye'; */
+        /* width:50vw; */
+        /* padding: 1vw; */
+        /* height:17vw;
+        font-size: 6vw;
+visibility: visible;
+z-index: 5;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+opacity: .5;
+width: 30vw;
+height: 10vw; */
+/* margin-top: .5vw; */
+/* margin-bottom: .5vw; */
+/* margin-left: 1vw;
+margin-right: 1vw;
+font-size: 5vw;
+border-radius: 5px;
+letter-spacing: .1vw;
+
+color: white;
+border-color: white;
+background-color: transparent;
+font-family: 'Slenderman'; */
+/* display: block;
+margin-top: auto;
+margin-bottom: auto; */
+/* position: absolute; */
+/* background-color: red; */
+/* padding-bottom: 50px; */
+/* top: 2px; */
+        /* content: 'About';
+
+    } */
 
     .about_slideControls{
         margin-left: 4vw;
@@ -814,6 +853,10 @@ button:hover + .character_sprite{
     .logo_sprite{
         /* margin-top: 1vw; */
         /* margin-bottom: -.5vw; */
+    }
+
+    .candle_sprite_test{
+        margin-top: 50px;
     }
 
 
