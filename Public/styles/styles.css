@@ -178,6 +178,7 @@ html, body {
 .character_sprite{
     /* position: absolute; */
     /* z-index:1; */
+    margin-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -185,7 +186,7 @@ html, body {
     height: 447px;
     background: url('/media/sprites/character_handDown.png') left center;
     animation: idle 4s steps(32) infinite alternate-reverse;
-    transform: scale(.75);
+    transform: scale(.9);
 
 }
 
@@ -198,7 +199,7 @@ html, body {
 .character_sprite:hover, .character_sprite:active, .character_sprite:focus{
     background: url('/media/sprites/character_handUp.png') left center;
     animation: wand 5s steps(32) infinite alternate-reverse;
-    transform: scale(.75);
+    transform: scale(.9);
 
 
 }
