@@ -505,8 +505,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* padding-top: 100px; */
 }
 
 h1{
@@ -714,7 +715,7 @@ button:hover + .character_sprite{
 }
 
 #grimoire_slideShow_container{
-    /* margin-top: 300px; */
+    margin-top: 100px;
 }
 
 @media only screen and (max-width: 1300px) {
