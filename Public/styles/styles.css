@@ -23,7 +23,7 @@ html, body {
     flex-shrink: 0;
 }
 
-.grimoire_page{
+.grimoire_page, .about_page{
     /* background-color: yellow; */
     width: 100%;
     height: 100%;
@@ -348,7 +348,7 @@ h4{
 /* Back button for all non-index pages. (About, Grimoire, and Download.) */
 .back_button{
     display: flex;
-    margin-top: 8vw;
+    margin-top: 100px;
     /* margin-bottom: -300px; */
     /* display: block;
     margin-top: auto;
@@ -387,7 +387,7 @@ h4{
 /* About page divs in order of appearance. */
 
 .about{
-    margin-top:-300px;;
+    margin-top:100px;
     margin-right:7vw;
     margin-left:7vw;
     margin-bottom: auto;
@@ -420,7 +420,7 @@ h4{
 .about_mySlides{
     width:100%;
     /* padding: 1vw; */
-    margin-bottom: 5vw;
+    margin-bottom: 100px;
 }
 
 #about_screenshot{
@@ -471,7 +471,8 @@ img {
 }
 
 .download_instructions{
-    margin-top: -200px;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
     margin-right:7vw;
     margin-left:7vw;
 }
@@ -841,11 +842,11 @@ margin-bottom: auto; */
         margin-right:7vw;
         margin-left:7vw;
         /* width:100%; */
-        margin-bottom: 5vw;
+        margin-bottom: 100px;
     }
 
     .about{
-        margin-top: -300px;
+        /* margin-top: -300px; */
     }
 
     #about_screenshot{
