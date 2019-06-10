@@ -343,6 +343,8 @@ h4{
     transform: scale(.2);
 } */
 
+/*  */
+
 /* Back button for all non-index pages. (About, Grimoire, and Download.) */
 .back_button{
     display: flex;
