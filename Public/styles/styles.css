@@ -13,30 +13,25 @@ html, body {
 }
 
 .container{
-    /* background-color: yellow; */
     width: 100%;
     height: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 1vw; */
     flex-shrink: 0;
 }
 
 .grimoire_page, .about_page{
-    /* background-color: yellow; */
     width: 100%;
     height: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 1vw; */
     flex-shrink: 0;
 }
 
 .character{
     padding-top: 5vw;
-    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,12 +41,8 @@ html, body {
 }
 
 .index_buttons{
-    /* background-color: blue; */
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-evenly;
-    /* flex-direction: column; */
-    /* flex-grow: 1; */
     padding-left: 20vw;
     padding-right: 20vw;
     z-index: 3;
@@ -59,8 +50,6 @@ html, body {
 }
 
 .logo_sprite{
-    /* transform: scale(.75); */
-    /* background-color: green; */
     padding: 130px;
     z-index: 1;
     display: block;
@@ -94,7 +83,6 @@ html, body {
 #index_about,#index_grimoire, #index_download{
     z-index: 5;
     display: block;
-
     opacity: .5;
     width: 30vw;
     height: 10vw;
@@ -105,44 +93,28 @@ html, body {
     font-size: 5vw;
     border-radius: 5px;
     letter-spacing: .1vw;
-
     color: white;
-    /* border-color: white; */
     background-color: transparent;
     font-family: 'Slenderman';
 }
 
 #index_about:hover,#index_grimoire:hover, #index_download:hover{
-        /* color: black; */
-        /* color: #E6E2A3; */
-        /* color: #DDCC44; */
-        color: #ebd315;
-            /* color: #9B3201; */
-    /* background-color: white; */
-
+    color: #ebd315;
 }
 
-/* testing */
-
 .candle_test{
-    /* position: absolute; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top:100px;
-
-    /* margin-bottom: 10%; */
     width: 100%;
     z-index: 2;
-    /* background-color: red; */
 }
 
 
 .candle_sprite_test{
-    /* background-color: green; */
     z-index: 0;
     display: block;
-    /* margin-top:  50px; */
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -163,10 +135,8 @@ html, body {
 }
 
 .door_sprite{
-    /* background-color: pink; */
     margin-top: 0px;
     margin-bottom: -300px;
-        /* margin-bottom: -30vw; */
     transform: scale(.5);
     display: block;
     margin-left: auto;
@@ -187,8 +157,6 @@ html, body {
 }
 
 .character_sprite{
-    /* position: absolute; */
-    /* z-index:1; */
     margin-top: -20px;
     margin-bottom: -50px;
     display: block;
@@ -225,8 +193,6 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     top:auto;
-    /* left: 50%; */
-    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
     margin: 1vw;
@@ -235,30 +201,14 @@ html, body {
 }
 
 .monster_pack{
-    /* transform: scale(.25); */
-    /* opacity: .5; */
-    /* position: absolute;
-    top: 800px; */
-
-    /* left: -155px; */
-    /* left: -50%; */
-
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: 1vw;
-    /* background-color: orange; */
-
     width:400;
     height:64.65;
-
-
     margin-top: 50px;
-    /* padding-top: -15vw; */
     margin-bottom: -50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* z-index:15; */
     transform: scale(.75);
 }
 
@@ -314,8 +264,6 @@ html, body {
   to{background-position-x:0px;}
 }
 
-
-
 h4{
     color: white;
     font-family: 'Slenderman';
@@ -327,62 +275,29 @@ h4{
     display: block;
     padding-top: 2vw;
     padding-bottom: 1vw;
-    /* margin-bottom: 2vw; */
     padding-right: 100px;
     letter-spacing: .05vw;
-
     align-items: center;
     justify-content: center;
 
 }
 
-/* #back_button_img, #back_button_img:hover{
-    z-index: 1;
-    display: block;
-    margin-top: -400px;
-    transform: scale(.2);
-} */
-
-/*  */
-
 /* Back button for all non-index pages. (About, Grimoire, and Download.) */
 .back_button{
     display: flex;
     margin-top: 100px;
-    /* margin-bottom: -300px; */
-    /* display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto; */
-    /* margin-bottom: 400px; */
 }
 
 #back_button_img{
     display: block;
     margin-top: -400px;
     margin-left: 40vw;
-    /* margin-bottom: 400px; */
-    /* margin-right: auto; */
     background: url('/media/imgs/back_button_hover.png') left center;
     width:1305px;
     height:838px;
     background-size: 26vw 10vw;
     background-repeat: no-repeat;
 }
-
-/* #back_button_img{
-    background: url('/media/imgs/back_button.png') left center;
-    width:1305px;
-    height:838px;
-}
-
-#back_button_img:hover{
-    background: url('/media/imgs/back_button_hover.png') left center;
-    width:1305px;
-    height:838px;
-    background-color:#9B3201;
-}*/
 
 /* About page divs in order of appearance. */
 
@@ -404,8 +319,6 @@ h4{
 .about_slideControls_container{
     margin: auto;
     width: 50%;
-    /* border: 3px solid green; */
-    /* padding: 10px; */
 }
 
 .about_slideControls{
@@ -419,7 +332,6 @@ h4{
 
 .about_mySlides{
     width:100%;
-    /* padding: 1vw; */
     margin-bottom: 100px;
 }
 
@@ -459,12 +371,6 @@ h4{
     z-index: 1;
 }
 
-img {
-    /* width:1000px;
-    height:625px; */
-  /* object-fit: contain; */
-}
-
 .return{
     float: right;
     z-index: 5;
@@ -472,7 +378,6 @@ img {
 
 .download_instructions{
     margin-top: 100px;
-    /* margin-bottom: 100px; */
     margin-right:7vw;
     margin-left:7vw;
 }
@@ -507,8 +412,15 @@ img {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    /* padding-top: 100px; */
 }
+
+/* #test_gif_health_bar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1000px;
+    margin-bottom: 50px;
+} */
 
 h1{
     color: white;
@@ -540,7 +452,6 @@ ul{
     list-style:circle;
     margin-left:1vw;
     padding-left:1vw;
-    /* margin-left: 4vw; */
 }
 
 p{
@@ -550,13 +461,10 @@ p{
     margin-right: auto;
     color: #9B3201;
     font-family: 'Optima', sans-serif;
-    /* font-family: 'Slenderman'; */
-    /* font-size: 5vw; */
-    font-size: 3vw;
-    text-indent: 1.5em;
+    font-size: 2vw;
     text-indent: 0em;
     letter-spacing: .4vw;
-    line-height: 5vw;
+    line-height: 3vw;
     margin-bottom: 5vw;
 }
 
@@ -564,9 +472,6 @@ h3{
     float: right;
     color: white;
     font-family: 'Optima', sans-serif;
-    /* font-family: 'Slenderman'; */
-    /* font-size: 4vw; */
-
     font-size: 2vw;
     margin-top: 1vw;
 }
@@ -660,8 +565,6 @@ button:hover + .character_sprite{
     }
 
     #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
-        /* margin-top: auto;
-        margin-bottom: auto; */
         background-size: 13vw 5vw;
         z-index: 1;
         display: block;
@@ -715,44 +618,33 @@ button:hover + .character_sprite{
 }
 
 #grimoire_slideShow_container{
-    margin-top: 100px;
+    /* margin-top: -5vw; */
 }
 
 @media only screen and (max-width: 1300px) {
 
     h1{
         letter-spacing: .05vw;
-        /* margin-top: -1vw; */
         font-size: 20vw;
         padding-bottom: 2vw;
-        /* flex-grow: 1; */
     }
 
+
     h2{
-        /* letter-spacing: .05vw; */
         text-indent: 0em;
         font-size: 14vw;
         letter-spacing: .4vw;
-        line-height: 8vw;
         padding-bottom: 2vw;
     }
 
     p{
-        color: #9B3201;
-        text-indent: 0em;
-        letter-spacing: .4vw;
         line-height: 5vw;
         font-size: 4vw;
-        /* font-size: 8vw; */
-        /* line-height: 8vw; */
-        margin-bottom: 5vw;
     }
 
     ul, li{
         color: white;
         font-size: 7vw;
-        /* text-indent: -1.5em; */
-         /* margin-left:-100px; */
         margin-bottom: 5vw;
         line-height: 7vw;
         letter-spacing: .4vw;
@@ -763,9 +655,7 @@ button:hover + .character_sprite{
     }
 
     h3{
-        /* font-size: 7vw; */
         font-size: 3.5vw;
-        /* margin: 1vw; */
     }
 
     #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
@@ -773,65 +663,16 @@ button:hover + .character_sprite{
         margin-top: auto;
     }
 
-    /* #grimoire_slideShow_container{
-        margin-top: -600px;
-    } */
-
     .mySlides{
         margin-right:7vw;
         margin-left:7vw;
     }
 
     #index_about, #index_grimoire, #index_download, #index_about::after{
-        /* margin-top:7vw; */
         width:60vw;
-        /* padding: 1vw; */
         height:17vw;
         font-size: 10vw;
-        /* color */
     }
-/*
-    #index_about{
-        visibility: hidden;
-    }
-
-    #index_about::after{
-        /* content:'goodbye'; */
-        /* width:50vw; */
-        /* padding: 1vw; */
-        /* height:17vw;
-        font-size: 6vw;
-visibility: visible;
-z-index: 5;
-display: block;
-margin-left: auto;
-margin-right: auto;
-
-opacity: .5;
-width: 30vw;
-height: 10vw; */
-/* margin-top: .5vw; */
-/* margin-bottom: .5vw; */
-/* margin-left: 1vw;
-margin-right: 1vw;
-font-size: 5vw;
-border-radius: 5px;
-letter-spacing: .1vw;
-
-color: white;
-border-color: white;
-background-color: transparent;
-font-family: 'Slenderman'; */
-/* display: block;
-margin-top: auto;
-margin-bottom: auto; */
-/* position: absolute; */
-/* background-color: red; */
-/* padding-bottom: 50px; */
-/* top: 2px; */
-        /* content: 'About';
-
-    } */
 
     .about_slideControls{
         margin-left: 4vw;
@@ -842,10 +683,6 @@ margin-bottom: auto; */
         margin-left:7vw;
         /* width:100%; */
         margin-bottom: 100px;
-    }
-
-    .about{
-        /* margin-top: -300px; */
     }
 
     #about_screenshot{
@@ -866,11 +703,6 @@ margin-bottom: auto; */
         background-size: 16.5vw 7vw;
     }
 
-    .logo_sprite{
-        /* margin-top: 1vw; */
-        /* margin-bottom: -.5vw; */
-    }
-
     .candle_sprite_test{
         margin-top: 50px;
     }
@@ -882,11 +714,7 @@ margin-bottom: auto; */
         padding-right: 10vw;
     }
 
-
 }
-
-
-
 
 .monster_eyes{
     display: block;
