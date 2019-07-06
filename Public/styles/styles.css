@@ -266,24 +266,7 @@ html, body {
   to{background-position-x:0px;}
 }
 
-h4{
-    /* color: #9B3201; */
-    color: white;
-    font-family: 'Slenderman';
-    font-size: 10vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-left: auto;
-    display: block;
-    padding-top: 2vw;
-    padding-bottom: 1vw;
-    padding-right: 100px;
-    letter-spacing: .05vw;
-    align-items: center;
-    justify-content: center;
 
-}
 
 /* Back button for all non-index pages. (About, Grimoire, and Download.) */
 .back_button{
@@ -317,10 +300,10 @@ h4{
 /* About page divs in order of appearance. */
 
 .about{
-    margin-top:100px;
-    margin-right:7vw;
-    margin-left:7vw;
+    margin-right:8vw;
+    margin-left:8vw;
     margin-bottom: auto;
+
 }
 
 .about_slideControls_container{
@@ -338,10 +321,16 @@ h4{
     margin-bottom: 100px;
 }
 
+.about_slides_container{
+    /* margin-left: 5%; */
+    margin-bottom: -100px;
+}
+
 #about_screenshot{
-    width:1200px;
+    /* width:1200px; */
+    width: 100%;
     height:750px;
-    padding: 4vw;
+    padding: 3vw;
     object-fit: contain;
 }
 
@@ -437,11 +426,25 @@ h2{
     margin-bottom: 2vw;
 }
 
+h4{
+    z-index: 15;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #9B3201;
+    font-family: 'Optima', sans-serif;
+    font-size: 2vw;
+    text-indent: 0em;
+    letter-spacing: .4vw;
+    line-height: 3vw;
+    margin-bottom: 2vw;
+}
+
 ul{
     font-family: 'Slenderman';
     color: white;
     font-size: 4vw;
-    margin-bottom: 5vw;
+    margin-bottom: 100px;
     line-height: 7vw;
     letter-spacing: .4vw;
     list-style:circle;
@@ -669,19 +672,23 @@ button:hover + .character_sprite{
 
     ul, li{
         color: white;
-        font-size: 7vw;
-        margin-bottom: 5vw;
+        font-size: 5vw;
         line-height: 7vw;
         letter-spacing: .4vw;
         list-style:circle;
         margin-left:1vw;
         padding-left:1vw;
-
     }
 
     h3{
-        /* color: black; */
         font-size: 3.5vw;
+    }
+
+    h4{
+        letter-spacing: .2vw;
+        font-size: 3vw;
+        margin-bottom: 7vw;
+        line-height: 5vw;
     }
 
     #book_button_forward, #book_button_forward:hover, #book_button_back, #book_button_back:hover{
@@ -733,11 +740,17 @@ button:hover + .character_sprite{
         margin-bottom: 100px;
     }
 
+    .about_slides_container{
+        margin-bottom: 30px;
+        margin-right: 200px;
+    }
+
     #about_screenshot{
-        padding: 0vw;
-        width:800px;
+        padding: 1vw;
+        /* width:800px; */
+        width: 100%;
         height:531.25px;
-        object-fit: contain;
+        /* object-fit: contain; */
     }
 
     #download_instructions{
